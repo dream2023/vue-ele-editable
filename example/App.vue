@@ -304,10 +304,10 @@ export default {
           type: 'image',
           desc: '单个图片/多张图片',
           popover: {
-            data: ['https://pbs.twimg.com/media/CUQoYwyUAAArbIr.jpg:large', 'https://pbs.twimg.com/media/B3cj7H_IgAAFHYL.jpg:large']
+            data: ['https://raw.githubusercontent.com/dream2023/vue-ele-editable/master/public/img/3.png', 'https://raw.githubusercontent.com/dream2023/vue-ele-editable/master/public/img/4.png']
           },
           inline: {
-            data: ['https://pbs.twimg.com/media/CUQoYwyUAAArbIr.jpg:large', 'https://pbs.twimg.com/media/B3cj7H_IgAAFHYL.jpg:large']
+            data: ['https://raw.githubusercontent.com/dream2023/vue-ele-editable/master/public/img/3.png', 'https://raw.githubusercontent.com/dream2023/vue-ele-editable/master/public/img/4.png']
           }
         },
         {
@@ -441,7 +441,7 @@ export default {
         {
           id: 1,
           name: '旋涡鸣人',
-          avatar: ['https://pbs.twimg.com/media/CUQoYwyUAAArbIr.jpg:large', 'https://pbs.twimg.com/media/B3cj7H_IgAAFHYL.jpg:large'],
+          avatar: ['https://raw.githubusercontent.com/dream2023/vue-ele-editable/master/public/img/3.png', 'https://raw.githubusercontent.com/dream2023/vue-ele-editable/master/public/img/4.png'],
           age: 12,
           city: 'muyecun',
           match: '2019-10-20 10:20:30',
@@ -452,7 +452,7 @@ export default {
         {
           id: 2,
           name: '日向雏田',
-          avatar: ['http://wx2.sinaimg.cn/large/d2e27164gy1feh02b6gs2j21hc1021kx.jpg', 'http://wx3.sinaimg.cn/large/d2e27164gy1feh02gz6l0j21hc10o1kx.jpg'],
+          avatar: ['https://raw.githubusercontent.com/dream2023/vue-ele-editable/master/public/img/1.png', 'https://raw.githubusercontent.com/dream2023/vue-ele-editable/master/public/img/2.png'],
           age: 12,
           city: 'muyecun',
           match: '2019-10-20 10:20:30',
@@ -463,7 +463,7 @@ export default {
         {
           id: 3,
           name: '药师兜',
-          avatar: 'https://p1.ssl.qhmsg.com/t01bd77c3e58896edaf.png',
+          avatar: 'https://raw.githubusercontent.com/dream2023/vue-ele-editable/master/public/img/5.png',
           age: 24,
           city: 'yinyincun',
           match: 1571536800,
