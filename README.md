@@ -132,27 +132,27 @@ props: {
 
 `type` 用于指定渲染组件, 目前支持的内置组件有:
 
-| 类型          | 含义                                                 |
-| ------------- | ---------------------------------------------------- |
-| text          | 静态文本                                             |
-| input         | 可编辑的单行文本                                     |
-| textarea      | 可编辑的多行文本                                     |
-| select        | 下拉框                                               |
-| number        | 可编辑数字                                           |
-| radio         | 单选                                                 |
-| checkbox      | 多选                                                 |
-| datetime      | 可编辑的日期时间 (可接受时间戳, 字符串, Date 类型值) |
-| datetime-text | 不可编辑的日期时间 (接受值同上)                      |
-| date          | 可编辑的日期 (接受值同上)                            |
-| date-text     | 不可编辑的日期 (接受值同上)                          |
-| time          | 可编辑的时间 (接受值同上)                            |
-| time-text     | 不可编辑的时间 (接受值同上)                          |
-| status        | 状态                                                 |
-| switch        | 开关                                                 |
-| image         | 单个图片/多张图片                                    |
-| upload-image  | 上传图片                                             |
-| url           | 链接                                                 |
-| color         | 颜色                                                 |
+| 类型          | 含义                                                 | 属性参考                                                                                 |
+| ------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| text          | 静态文本                                             |                                                                                          |
+| image         | 单个图片/多张图片                                    | [vue-ele-gallery](https://github.com/dream2023/vue-ele-gallery)                          |
+| upload-image  | 上传图片                                             | [vue-ele-upload-image](https://github.com/dream2023/vue-ele-upload-image)                |
+| input         | 可编辑的单行文本                                     | [element-ui input](https://element.eleme.cn/#/zh-CN/component/input)                     |
+| textarea      | 可编辑的多行文本                                     | [element-ui input](https://element.eleme.cn/#/zh-CN/component/input)                     |
+| select        | 下拉框                                               | [element-ui select](https://element.eleme.cn/#/zh-CN/component/select)                   |
+| number        | 可编辑数字                                           | [element-ui input-number](https://element.eleme.cn/#/zh-CN/component/input-number)       |
+| radio         | 单选                                                 | [element-ui radio](https://element.eleme.cn/#/zh-CN/component/radio)                     |
+| checkbox      | 多选                                                 | [element-ui checkbox](https://element.eleme.cn/#/zh-CN/component/checkbox)               |
+| datetime      | 可编辑的日期时间 (可接受时间戳, 字符串, Date 类型值) | [element-ui datetime-picker](https://element.eleme.cn/#/zh-CN/component/datetime-picker) |
+| datetime-text | 不可编辑的日期时间 (接受值同上)                      |                                                                                          |
+| date          | 可编辑的日期 (接受值同上)                            | [element-ui date-picker](https://element.eleme.cn/#/zh-CN/component/date-picker)         |
+| date-text     | 不可编辑的日期 (接受值同上)                          |                                                                                          |
+| time          | 可编辑的时间 (接受值同上)                            | [element-ui time-picker](https://element.eleme.cn/#/zh-CN/component/time-picker)         |
+| time-text     | 不可编辑的时间 (接受值同上)                          |                                                                                          |
+| status        | 状态                                                 | [element-ui tag](https://element.eleme.cn/#/zh-CN/component/tag)                         |
+| switch        | 开关                                                 | [element-ui switch](https://element.eleme.cn/#/zh-CN/component/switch)                   |
+| url           | 链接                                                 |                                                                                          |
+| color         | 颜色                                                 | [element-ui color-picker](https://element.eleme.cn/#/zh-CN/component/color-picker)       |
 
 当`type`不是以上任何一个类型时, 就会按照传递的名字渲染, 可以进行自定义扩展组件, 具体参考 [自定义扩展示例 rate](./example/CustomRate.vue), [自定义扩展示例 slider](./example/CustomSlider.vue), 具体表现形式, 请看[在线示例](https://codepen.io/dream2023/pen/dBNNbP)
 
