@@ -1,0 +1,80 @@
+{
+  "name": "vue-ele-editable",
+  "description": "高效、简单、强大的 element-ui 行内编辑组件",
+  "version": "0.1.0",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build:lib": "vue build -t lib --name vue-ele-editable -d ./dist/ ./src/index.js",
+    "build": "npm run lint & npm run build:lib",
+    "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dream2023/vue-ele-editable"
+  },
+  "main": "src/vue-ele-editable.umd.min.js",
+  "homepage": "https://github.com/dream2023/vue-ele-editable",
+  "keywords": [
+    "vue-ele-editable",
+    "editable",
+    "inline edit",
+    "edit cell",
+    "editable table",
+    "element table",
+    "el-editable",
+    "vue editable"
+  ],
+  "dependencies": {
+    "dayjs": "^1.8.14",
+    "vue-ele-gallery": "^2.1.2",
+    "vue-ele-upload-image": "^2.0.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "core-js": "^2.6.5",
+    "element-ui": "^2.9.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "lint-staged": "^8.1.5",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
