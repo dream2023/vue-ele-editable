@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/dream2023/vue-ele-editable"
   },
-  "main": "src/vue-ele-editable.umd.min.js",
+  "main": "dist/vue-ele-editable.umd.min.js",
   "homepage": "https://github.com/dream2023/vue-ele-editable",
   "keywords": [
     "vue-ele-editable",

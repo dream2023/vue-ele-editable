@@ -131,27 +131,28 @@ props: {
 #### type:
 
 `type` 用于指定渲染组件, 目前支持的内置组件有:
-类型 | 含义
--|-
-text|静态文本
-input|可编辑的单行文本
-textarea|可编辑的多行文本
-select|下拉框
-number|可编辑数字
-radio|单选
-checkbox|多选
-datetime|可编辑的日期时间 (可接受时间戳, 字符串, Date 类型值)
-datetime-text|不可编辑的日期时间 (接受值同上)
-date|可编辑的日期 (接受值同上)
-date-text|不可编辑的日期 (接受值同上)
-time|可编辑的时间 (接受值同上)
-time-text|不可编辑的时间 (接受值同上)
-status|状态
-switch|开关
-image|单个图片/多张图片
-upload-image|上传图片
-url|链接
-color|颜色
+
+| 类型          | 含义                                                 |
+| ------------- | ---------------------------------------------------- |
+| text          | 静态文本                                             |
+| input         | 可编辑的单行文本                                     |
+| textarea      | 可编辑的多行文本                                     |
+| select        | 下拉框                                               |
+| number        | 可编辑数字                                           |
+| radio         | 单选                                                 |
+| checkbox      | 多选                                                 |
+| datetime      | 可编辑的日期时间 (可接受时间戳, 字符串, Date 类型值) |
+| datetime-text | 不可编辑的日期时间 (接受值同上)                      |
+| date          | 可编辑的日期 (接受值同上)                            |
+| date-text     | 不可编辑的日期 (接受值同上)                          |
+| time          | 可编辑的时间 (接受值同上)                            |
+| time-text     | 不可编辑的时间 (接受值同上)                          |
+| status        | 状态                                                 |
+| switch        | 开关                                                 |
+| image         | 单个图片/多张图片                                    |
+| upload-image  | 上传图片                                             |
+| url           | 链接                                                 |
+| color         | 颜色                                                 |
 
 当`type`不是以上任何一个类型时, 就会按照传递的名字渲染, 可以进行自定义扩展组件, 具体参考 [自定义扩展示例 rate](./example/CustomRate.vue), [自定义扩展示例 slider](./example/CustomSlider.vue), 具体表现形式, 请看[在线示例](https://codepen.io/dream2023/pen/dBNNbP)
 
