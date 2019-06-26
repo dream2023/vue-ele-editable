@@ -32,7 +32,6 @@ npm install vue-ele-editable --save
 ## 使用
 
 ```js
-// 全局引入(推荐)
 import EleEditable from 'vue-ele-editable'
 Vue.use(EleEditable)
 
@@ -49,16 +48,6 @@ Vue.use(EleEditable, {
   },
   ...
 })
-```
-
-```js
-// 局部引入
-import { EleEditable } from 'vue-ele-editable'
-export default {
-  components: {
-    EleEditable
-  }
-}
 ```
 
 ## Props
@@ -104,10 +93,7 @@ props: {
     }
   },
   // 请求地址
-  requestFn: {
-    type: Function,
-    required: true
-  },
+  requestFn: Function,
   // 校检规则
   rules: [Array, Object],
   // 其他附带数据

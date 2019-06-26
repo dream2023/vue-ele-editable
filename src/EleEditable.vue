@@ -124,10 +124,7 @@ export default {
       }
     },
     // 请求地址
-    requestFn: {
-      type: Function,
-      required: true
-    },
+    requestFn: Function,
     // 校检规则
     rules: [Array, Object],
     // 其他附带数据
@@ -267,6 +264,13 @@ export default {
 
     // 发送请求
     async handleChange (value) {
+      if (!this.requestFn) {
+        this.$notify.error({
+          title: '参数错误',
+          message: '未传递request-fn参数'
+        })
+        return
+      }
       // 判断是否正在加载
       if (this.isLoading) return
 
