@@ -10,7 +10,7 @@
 
 <script>
 import EleEditableMixin from '../EleEditableMixin'
-import EleGallery from 'vue-ele-gallery/src/index'
+import EleGallery from 'vue-ele-gallery'
 
 export default {
   name: 'EleEditableImage',

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import EleUploadImage from 'vue-ele-upload-image/src/index'
+import EleUploadImage from 'vue-ele-upload-image'
 import EleEditableMixin from '../EleEditableMixin'
 
 export default {
