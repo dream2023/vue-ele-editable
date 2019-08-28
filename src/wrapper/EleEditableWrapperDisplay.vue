@@ -1,10 +1,12 @@
 <template>
   <a
-    :class="{'ele-editable__empty': isEmpty, 'ele-editable__edit': !isEmpty}"
-    @click="$emit('click')"
+    :class="{'ele-editable__empty': isEmpty, 'ele-editable__edit': !isEmpty, 'ele-editable_disabled': disabled}"
+    @click="click"
   >
+    <!-- 禁用时 -->
+    <template v-if="disabled">{{ displayValue }}</template>
     <!-- 为空时 -->
-    <template v-if="isEmpty">{{emptyText}}</template>
+    <template v-else-if="isEmpty">{{ emptyText }}</template>
     <!-- 不为空时 -->
     <template v-else>
       <template v-if="isTimeComponent">
@@ -27,6 +29,10 @@ export default {
   props: {
     type: String,
     isEmpty: Boolean,
+    disabled: {
+      type: Boolean,
+      default: false
+    },
     emptyText: String,
     displayValue: [String, Number, Boolean, Array, Date]
   },
@@ -54,6 +60,13 @@ export default {
         time: 'HH:mm',
         date: 'YYYY-MM-DD',
         datetime: 'YYYY-MM-DD HH:mm'
+      }
+    }
+  },
+  methods: {
+    click () {
+      if (!this.disabled) {
+        this.$emit('click')
       }
     }
   }

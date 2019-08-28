@@ -13,6 +13,7 @@
       :emptyText="emptyText"
       :field="field"
       :inline="inline"
+      :disabled="disabled"
       :isEmpty="isEmpty"
       :newValue="newValue"
       :noWrapper="noWrapper"
@@ -104,6 +105,10 @@ export default {
     },
     // 是否为行内
     inline: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
       type: Boolean,
       default: false
     },
@@ -291,7 +296,8 @@ export default {
           // 发送请求
           const data = Object.assign({}, this.customData, { [this.field]: value })
           this.isLoading = true
-          await this.requestFn(data)
+          await this.$emit('requestFn', data)
+          // await this.requestFn(data)
           this.isError = false
           this.$message.success('更新成功')
           this.$emit('input', value)
@@ -373,5 +379,10 @@ export default {
   cursor: pointer;
   color: #409eff;
   border-bottom: dashed 1px #409eff;
+}
+.ele-editable_disabled {
+  color: #585858;
+  cursor: default;
+  border-bottom: none;
 }
 </style>

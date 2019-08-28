@@ -66,6 +66,7 @@
             <!-- 弹窗展示区 -->
             <ele-editable-wrapper-display
               :displayValue="displayValue"
+              :disabled="disabled"
               :emptyText="emptyText"
               :isEmpty="isEmpty"
               :type="type"
@@ -82,6 +83,7 @@
           :displayValue="displayValue"
           :emptyText="emptyText"
           :isEmpty="isEmpty"
+          :disabled="disabled"
           :type="type"
           @click="handleShowEditing"
         />
@@ -125,6 +127,11 @@ export default {
       default () {
         return {}
       }
+    },
+    // 是否禁用
+    disabled: {
+      type: Boolean,
+      default: false
     },
     // 是否为空
     isEmpty: {
